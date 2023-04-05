@@ -30,6 +30,6 @@ The network itself was trained by Davis King on a dataset of ≈3 million images
 
 For the purpose of expression/emotion recognition we are using [FER dataset](https://www.kaggle.com/datasets/msambare/fer2013) which consists of images of faces of size (48 x 48 pixel). The dataset consists of 28,709 training examples and 3,589 test set examples.
 
-*Example*
+*Example: running the model on some test images*
 
 <img src="https://github.com/JUGALHKEDIA/Face-Recognition-and-Expression-Recognition-system/blob/main/face_expression.gif" alt="example of face expression recognition" style="width:75%">
