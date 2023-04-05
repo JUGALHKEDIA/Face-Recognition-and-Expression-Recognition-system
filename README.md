@@ -19,7 +19,8 @@ b) is highly accurate. (99.38% training accuracy on Labeled Faces in the Wild (L
 
 For the face-recognition (dLib) network, the output feature vector is **128-dimensional** (i.e., a list of 128 real-valued numbers) that is used to quantify the face. The Training the network is done using **triples** function.
 
-[https://github.com/JUGALHKEDIA/Face-Recognition-and-Expression-Recognition-system/blob/main/face_recognition_opencv_triplet.jpg]
+<img src="https://github.com/JUGALHKEDIA/Face-Recognition-and-Expression-Recognition-system/blob/main/face_recognition_opencv_triplet.jpg" alt="face_recognition_triplet" style="width:100%"> 
+
 
 Here we provide three images to the network:
 
