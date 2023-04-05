@@ -12,9 +12,9 @@ Here I used Microsoft bing's image search API to build celebrity dataset. Given 
 2. **Deep transfer matric learning**  
 The advantages of using deep transfer matric learning is that it the pretrained model is highly accurate and saves a lot of training time as compared to when trying to train the model from scratch. 
 
--Instead of trying to output single label(or even the cordinates/bounding box region of objects in an image), with the help of Deep transfer matric learning model we are instead outputting a real-valued feature vector.
+Instead of trying to output single label(or even the cordinates/bounding box region of objects in an image), with the help of Deep transfer matric learning model we are instead outputting a real-valued feature vector.
 
-For the face-recognition (dLib) network, the output feature vector is **128-dimensional** (i.e., a list of 128 real-valued numbers) that is used to quantify the face. The Training the network is done using **triples** function.
+For the face-recognition (dLib) network, the output feature vector is **128-dimensional** (i.e., a list of 128 real-valued numbers) that is used to quantify the face. The Training the network is done using **triplet** function.
 
 <img src="https://github.com/JUGALHKEDIA/Face-Recognition-and-Expression-Recognition-system/blob/main/face_recognition_opencv_triplet.jpg" alt="face_recognition_triplet" style="width:80%"> 
 
@@ -25,8 +25,8 @@ Two of these images are example faces of the same person. The third image is a r
 
 Our network quantifies the faces, constructing the 128-d embedding (quantification) for each. From there, the general idea is that we’ll tweak the weights of our neural network so that the 128-d measurements of the two Will Ferrel will be closer to each other and farther from the measurements for Chad Smith.
 
-Our network architecture for face recognition is based on ResNet-34 from the Deep Residual Learning for Image Recognition paper by He et al., but with fewer layers and the number of filters reduced by half.
+Our network architecture for face recognition is based on ResNet-34 from the [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385#) paper by He et al., but with fewer layers and the number of filters reduced by half.
 
-The network itself was trained by Davis King on a dataset of ≈3 million images. On the Labeled Faces in the Wild (LFW) dataset the network compares to other state-of-the-art methods, reaching 99.38% accuracy.
+The network itself was trained by Davis King on a dataset of ≈3 million images. On the [Labeled Faces in the Wild (LFW)](http://vis-www.cs.umass.edu/lfw/) dataset the network compares to other state-of-the-art methods, reaching 99.38% accuracy.
 
 
