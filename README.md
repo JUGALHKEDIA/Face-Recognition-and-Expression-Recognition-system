@@ -10,16 +10,13 @@ Face recognition system mainly consists of ___ parts
 Here I used Microsoft bing's image search API to build celebrity dataset. Given the list of celebrities to the API program and a parameter N (***number of images to obtain***) the program looks for Top N number of pictures of each celebrity. Checks for open-source licensing agreement for the images and stores them into a directory-file structure. A further human check on these directories is made since there may be redundant copies of celeb phots or other kind of errors.
 
 2. Deep transfer matric learning
-- The method of using pretrained model so that we don't have to train our model from scratch.
-Advantages:
-a. saves a lot on actual training time.
-b. is highly accurate. (99.38% training accuracy on Labeled Faces in the Wild (LFW) dataset as quoted by Davis King).
+The advantages of using deep transfer matric learning is that it the pretrained model is highly accurate and saves a lot of training time as compared to when trying to train the model from scratch. 
 
--Instead of trying to optput single label(or even the cordinates/bounding box region of objects in an image), with the help of Deep transfer matric learning model we are instead outputting a real-valued feature vector.
+-Instead of trying to output single label(or even the cordinates/bounding box region of objects in an image), with the help of Deep transfer matric learning model we are instead outputting a real-valued feature vector.
 
 For the face-recognition (dLib) network, the output feature vector is **128-dimensional** (i.e., a list of 128 real-valued numbers) that is used to quantify the face. The Training the network is done using **triples** function.
 
-<img src="https://github.com/JUGALHKEDIA/Face-Recognition-and-Expression-Recognition-system/blob/main/face_recognition_opencv_triplet.jpg" alt="face_recognition_triplet" style="width:100%"> 
+<img src="https://github.com/JUGALHKEDIA/Face-Recognition-and-Expression-Recognition-system/blob/main/face_recognition_opencv_triplet.jpg" alt="face_recognition_triplet" style="width:80%"> 
 
 
 Here we provide three images to the network:
