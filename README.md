@@ -6,10 +6,10 @@ The Face Recognition and Expression recogntion system is combined as Face Recogn
 
 Face recognition system mainly consists of ___ parts
 
-1. **Building dataset**
+1. **Building dataset**  
 Here I used Microsoft bing's image search API to build celebrity dataset. Given the list of celebrities to the API program and a parameter N (***number of images to obtain***) the program looks for Top N number of pictures of each celebrity. Checks for open-source licensing agreement for the images and stores them into a directory-file structure. A further human check on these directories is made since there may be redundant copies of celebrity photos or other kind of errors.
 
-2. **Deep transfer matric learning**
+2. **Deep transfer matric learning**  
 The advantages of using deep transfer matric learning is that it the pretrained model is highly accurate and saves a lot of training time as compared to when trying to train the model from scratch. 
 
 -Instead of trying to output single label(or even the cordinates/bounding box region of objects in an image), with the help of Deep transfer matric learning model we are instead outputting a real-valued feature vector.
